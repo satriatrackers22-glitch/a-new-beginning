@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Help me repay my personal debts and start a new chapter in life. Every contribution matters.">
+<title>A New Beginning | Personal Fundraiser</title>
+
+<style>
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f5f8fc;
+  color:#243447;
+  line-height:1.7;
+}
+header {
+  background:#102b46;
+  color:white;
+  padding:20px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo {font-size:23px;font-weight:bold;}
+.logo span {color:#5bd5a0;}
+nav a {
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-size:14px;
+}
+.hero {
+  background:linear-gradient(135deg,#102b46,#1b5976);
+  color:white;
+  text-align:center;
+  padding:85px 20px;
+}
+.tag {
+  color:#70e0b0;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:12px;
+}
+h1 {
+  font-size:clamp(34px,6vw,55px);
+  line-height:1.2;
+  max-width:750px;
+  margin:20px auto;
+}
+.hero p {
+  color:#d6e6f2;
+  max-width:600px;
+  margin:15px auto 30px;
+}
+.button {
+  display:inline-block;
+  padding:15px 25px;
+  border-radius:9px;
+  background:#16a36a;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  text-align:center;
+  border:0;
+  cursor:pointer;
+}
+.button:hover {background:#118255;}
+.container {
+  max-width:850px;
+  margin:45px auto;
+  padding:0 18px;
+}
+.card {
+  background:white;
+  padding:30px;
+  margin-bottom:25px;
+  border-radius:15px;
+  box-shadow:0 5px 25px rgba(0,0,0,.05);
+}
+h2 {color:#163b58;}
+.raised {
+  color:#159968;
+  font-size:42px;
+  font-weight:bold;
+}
+.track {
+  height:13px;
+  background:#e9eef3;
+  border-radius:20px;
+  overflow:hidden;
+  margin:15px 0;
+}
+.fill {
+  width:0%;
+  height:100%;
+  background:#16a36a;
+}
+.stats {
+  display:flex;
+  justify-content:space-between;
+  color:#788798;
+  font-size:13px;
+}
+.story {color:#566577;}
+.amounts {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin:20px 0;
+}
+.amount {
+  border:1px solid #dce5ed;
+  padding:13px;
+  border-radius:8px;
+  text-align:center;
+  font-weight:bold;
+  text-decoration:none;
+  color:#24445e;
+}
+.amount:hover {
+  background:#eaf7f1;
+  border-color:#16a36a;
+}
+.paypal {
+  width:100%;
+  display:block;
+  background:#0070ba;
+  padding:16px;
+  border-radius:9px;
+  color:white;
+  text-decoration:none;
+  text-align:center;
+  font-weight:bold;
+}
+.paypal:hover {background:#005ea6;}
+.notice {
+  background:#eef7f4;
+  border-left:4px solid #16a36a;
+  padding:15px;
+  font-size:13px;
+  color:#426456;
+  border-radius:5px;
+}
+footer {
+  background:#102b46;
+  color:#d6e6f2;
+  text-align:center;
+  padding:35px 20px;
+  font-size:13px;
+}
+footer a {color:white;}
+@media(max-width:600px) {
+  header {padding:17px 5%;}
+  nav a {margin-left:10px;font-size:12px;}
+  .card {padding:22px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">A New <span>Beginning.</span></div>
+  <nav>
+    <a href="#story">My Story</a>
+    <a href="#donate">Donate</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="tag">Personal Fundraising Campaign</div>
+
+  <h1>Help Me Start Again.</h1>
+
+  <p>
+    A difficult business journey left me with personal debts.
+    I am reaching out with hope to repay my friends
+    and rebuild my life.
+  </p>
+
+  <a href="#donate" class="button">
+    Support My Journey ♥
+  </a>
+</section>
+
+<main class="container">
+
+  <section class="card">
+    <h2>Fundraising Goal</h2>
+
+    <div class="raised" id="raised">$0</div>
+
+    <div class="track">
+      <div class="fill" id="progress"></div>
+    </div>
+
+    <div class="stats">
+      <span id="percentage">0% funded</span>
+      <span>Goal: $1,000 USD</span>
+    </div>
+  </section>
+
+  <section class="card" id="story">
+    <h2>My Story</h2>
+
+    <div class="story">
+      <p>Hello, and thank you for taking the time to read my story.</p>
+
+      <p>
+        Some time ago, I borrowed money from several friends
+        to start my own business. I had dreams of building
+        something meaningful and creating a better future.
+      </p>
+
+      <p>
+        Unfortunately, things did not go as planned.
+        My business eventually had to stop operating,
+        and I was left with personal debts that I have
+        been struggling to repay.
+      </p>
+
+      <p>
+        These debts have been weighing on me for a long time.
+        More than anything, I want to fulfill my promises
+        and repay the friends who trusted and supported me.
+      </p>
+
+      <p>
+        I am now trying to raise
+        <strong>$1,000 USD</strong> to help repay
+        these outstanding personal debts.
+      </p>
+
+      <p>
+        I understand that everyone has their own responsibilities.
+        I do not expect anything from anyone, but any contribution,
+        no matter how small, would mean a lot to me.
+      </p>
+
+      <p>
+        My hope is to settle these obligations,
+        regain peace of mind, and start a new chapter in life.
+      </p>
+
+      <p>
+        If you cannot donate, sharing my story would
+        also be greatly appreciated.
+      </p>
+
+      <p>
+        Thank you sincerely for your kindness and support.
+      </p>
+
+      <strong>With gratitude,<br>
+      A New Beginning</strong>
+    </div>
+  </section>
+
+  <section class="card" id="donate">
+    <h2>Support My Journey</h2>
+
+    <p class="story">
+      Every contribution matters.
+      Please choose an amount you feel comfortable giving.
+    </p>
+
+    <div class="amounts">
+      <a class="amount"
+         href="https://paypal.me/satriabudiasmara/5"
+         target="_blank" rel="noopener noreferrer">$5 USD</a>
+
+      <a class="amount"
+         href="https://paypal.me/satriabudiasmara/10"
+         target="_blank" rel="noopener noreferrer">$10 USD</a>
+
+      <a class="amount"
+         href="https://paypal.me/satriabudiasmara/25"
+         target="_blank" rel="noopener noreferrer">$25 USD</a>
+
+      <a class="amount"
+         href="https://paypal.me/satriabudiasmara/50"
+         target="_blank" rel="noopener noreferrer">$50 USD</a>
+    </div>
+
+    <a class="paypal"
+       href="https://paypal.me/satriabudiasmara"
+       target="_blank"
+       rel="noopener noreferrer">
+       Continue with PayPal
+    </a>
+
+    <p class="notice" style="margin-top:20px">
+      Payments are handled through PayPal.
+      Please review the recipient and payment details
+      before confirming your transaction.
+      Contributions are voluntary and intended to
+      support my personal debt repayment.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Thank You for Your Kindness</h2>
+
+    <p class="story">
+      Your support gives me hope and encouragement
+      to move forward.
+      Every act of kindness is deeply appreciated.
+    </p>
+
+    <p>Thank you for being part of my journey.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p><strong>A New Beginning</strong></p>
+  <p>Personal Fundraising Campaign · Indonesia</p>
+  <p>This is a personal fundraiser, not a registered charity.</p>
+  <p>Payments processed through PayPal.</p>
+  <p>© 2026 A New Beginning</p>
+</footer>
+
+<script>
+// Update only after verifying actual received donations.
+const fundraisingGoal = 1000;
+const totalRaised = 0;
+
+const percentage = Math.min(
+  (totalRaised / fundraisingGoal) * 100, 100
+);
+
+document.getElementById("raised").textContent =
+  "$" + totalRaised.toLocaleString("en-US");
+
+document.getElementById("progress").style.width =
+  percentage + "%";
+
+document.getElementById("percentage").textContent =
+  percentage.toFixed(0) + "% funded";
+</script>
+
+</body>
+</html>
